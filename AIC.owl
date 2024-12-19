@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#SynthesisReaction">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#ReactionType"/>
+    <hasReactant rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#H2"/>
+    <hasReactant rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#O2"/>
+    <hasProduct rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#H2O"/>
+    <requiresCondition rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#25C"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#Condition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#Product">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#ReactionType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#hasProduct">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#ChemicalEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#hasState">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#25C">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#Condition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#requiresCondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#DecompositionOfWater">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#ReactionType"/>
+    <hasReactant rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#H2O"/>
+    <hasProduct rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#H2"/>
+    <hasProduct rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#O2"/>
+    <requiresCondition>Electrolysis</requiresCondition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#H2O">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#Product"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#hasReactant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#H2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#Reactant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#hasMolecularWeight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#Reactant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#O2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ashra/ontologies/2024/10/ChemistryBasics#Reactant"/>
+  </rdf:Description>
+</rdf:RDF>
